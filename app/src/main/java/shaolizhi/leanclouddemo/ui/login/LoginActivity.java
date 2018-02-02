@@ -18,6 +18,7 @@ import com.avos.avoscloud.SaveCallback;
 import shaolizhi.leanclouddemo.R;
 import shaolizhi.leanclouddemo.ui.base.BaseActivity;
 import shaolizhi.leanclouddemo.ui.main.MainActivity;
+import shaolizhi.leanclouddemo.ui.register.RegisterActivity;
 
 public class LoginActivity extends BaseActivity {
 
@@ -33,7 +34,7 @@ public class LoginActivity extends BaseActivity {
 
     //register button click event
     private void clickRegisterButton() {
-
+        startActivity(RegisterActivity.newIntent(this));
     }
 
     @Override
