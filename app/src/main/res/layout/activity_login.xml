@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context="shaolizhi.leanclouddemo.ui.login.LoginActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_act_textinputlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/login_act_textinputedittext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_act_string1"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_act_textinputlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/login_act_textinputedittext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_act_string2"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_act_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_white_button"
+        android:text="@string/login_act_string3"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/login_act_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_button"
+        android:text="@string/login_act_string4"
+        android:textColor="#ffffff" />
+</LinearLayout>

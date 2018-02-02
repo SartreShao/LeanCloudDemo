@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LeanCloudDemo</string>
+    <string name="login_act_string1">用户名</string>
+    <string name="login_act_string2">密码</string>
+    <string name="login_act_string3">登录</string>
+    <string name="login_act_string4">注册</string>
 </resources>

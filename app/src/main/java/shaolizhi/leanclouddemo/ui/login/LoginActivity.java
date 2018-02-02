@@ -1,20 +1,29 @@
-package shaolizhi.leanclouddemo;
+package shaolizhi.leanclouddemo.ui.login;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.SaveCallback;
 
-public class MainActivity extends AppCompatActivity {
+import shaolizhi.leanclouddemo.R;
+import shaolizhi.leanclouddemo.ui.base.BaseActivity;
+
+public class LoginActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int layoutId() {
+        return R.layout.activity_login;
+    }
 
+    @Override
+    protected void created(Bundle bundle) {
+//        testLeanCloudAPI();
+
+    }
+
+    private void testLeanCloudAPI() {
         // 测试 SDK 是否正常工作的代码
         AVObject testObject = new AVObject("TestObject");
         testObject.put("words", "Hello World!");
@@ -27,4 +36,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void resumed() {
+
+    }
+
+
 }
