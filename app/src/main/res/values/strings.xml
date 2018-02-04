@@ -13,5 +13,6 @@
     <string name="register_act_string1">用户名</string>
     <string name="register_act_string2">密码</string>
     <string name="register_act_string3">注册并登录</string>
+    <string name="main_act_string1">注销</string>
 
 </resources>
