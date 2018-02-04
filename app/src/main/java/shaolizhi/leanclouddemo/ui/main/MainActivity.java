@@ -8,10 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+
+import com.avos.avoscloud.AVUser;
 
 import shaolizhi.leanclouddemo.R;
 import shaolizhi.leanclouddemo.ui.base.BaseActivity;
+import shaolizhi.leanclouddemo.ui.login.LoginActivity;
 import shaolizhi.leanclouddemo.ui.publish.PublishActivity;
 
 public class MainActivity extends BaseActivity {
@@ -26,7 +28,15 @@ public class MainActivity extends BaseActivity {
 
     //logout click event
     private void clickLogout() {
-        Toast.makeText(this, "logout", Toast.LENGTH_SHORT).show();
+        logout();
+    }
+
+    private void logout() {
+        if (AVUser.getCurrentUser() != null) {
+            AVUser.logOut();
+            startActivity(LoginActivity.newIntent(this));
+            MainActivity.this.finish();
+        }
     }
 
     @Override

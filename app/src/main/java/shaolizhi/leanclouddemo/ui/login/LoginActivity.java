@@ -1,5 +1,6 @@
 package shaolizhi.leanclouddemo.ui.login;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -146,5 +147,9 @@ public class LoginActivity extends BaseActivity {
                 }
             }
         });
+    }
+
+    public static Intent newIntent(Context packageContext) {
+        return new Intent(packageContext, LoginActivity.class);
     }
 }
