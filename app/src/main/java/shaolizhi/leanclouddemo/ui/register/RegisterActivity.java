@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
+import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -87,8 +88,16 @@ public class RegisterActivity extends BaseActivity {
 
     @Override
     protected void created(Bundle bundle) {
+        setActionBarTitle();
         initView();
         initListener();
+    }
+
+    private void setActionBarTitle() {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.register_act_string4);
+        }
     }
 
     private void initListener() {

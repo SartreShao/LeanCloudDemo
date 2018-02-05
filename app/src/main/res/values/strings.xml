@@ -8,16 +8,23 @@
     <string name="login_act_string4">注册</string>
     <string name="login_act_string5">请输入用户名！</string>
     <string name="login_act_string6">请输入6位以上密码！</string>
+    <string name="login_act_string7">登录</string>
 
     <!--RegisterActivity-->
     <string name="register_act_string1">用户名</string>
     <string name="register_act_string2">密码</string>
     <string name="register_act_string3">注册并登录</string>
+    <string name="register_act_string4">注册</string>
+
+    <!--MainActivity-->
     <string name="main_act_string1">注销</string>
+
+    <!--PublishActivity-->
     <string name="publish_act_string1">标题</string>
     <string name="publish_act_string2">商品描述</string>
     <string name="publish_act_string3">金额</string>
     <string name="publish_act_string4">从相册选择一张照片</string>
     <string name="publish_act_string5">提交</string>
+    <string name="publish_act_string6">发布</string>
 
 </resources>

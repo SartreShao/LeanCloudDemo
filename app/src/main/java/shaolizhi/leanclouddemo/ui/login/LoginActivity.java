@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
+import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -46,9 +47,17 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void created(Bundle bundle) {
         //testLeanCloudAPI();
+        setActionBarTitle();
         initView();
         initListener();
         automaticLogin();
+    }
+
+    private void setActionBarTitle() {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.login_act_string7);
+        }
     }
 
     @Override
