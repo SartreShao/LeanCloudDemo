@@ -26,5 +26,6 @@
     <string name="publish_act_string4">从相册选择一张照片</string>
     <string name="publish_act_string5">提交</string>
     <string name="publish_act_string6">发布</string>
+    <string name="publish_act_string7">当前选中的照片</string>
 
 </resources>

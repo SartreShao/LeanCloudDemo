@@ -78,4 +78,13 @@
         android:background="@drawable/shape_white_button"
         android:text="@string/publish_act_string5"
         android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/publish_act_imageview1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/publish_act_string7"
+        android:scaleType="centerCrop" />
 </LinearLayout>
