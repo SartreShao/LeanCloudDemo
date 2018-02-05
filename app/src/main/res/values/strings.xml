@@ -27,5 +27,9 @@
     <string name="publish_act_string5">提交</string>
     <string name="publish_act_string6">发布</string>
     <string name="publish_act_string7">当前选中的照片</string>
+    <string name="publish_act_string8">请输入标题！</string>
+    <string name="publish_act_string9">请输入商品描述！</string>
+    <string name="publish_act_string10">请输入金额！</string>
+    <string name="publish_act_string11">请选择一张照片</string>
 
 </resources>
