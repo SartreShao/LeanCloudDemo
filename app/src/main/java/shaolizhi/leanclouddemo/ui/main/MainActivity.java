@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
         logout();
     }
 
-
     @Override
     protected int layoutId() {
         return R.layout.activity_main;
@@ -86,6 +85,10 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void resumed() {
         listData.clear();
+        queryProductFromNet();
+    }
+
+    private void queryProductFromNet() {
         AVQuery<AVObject> avQuery = new AVQuery<>("Product");
         avQuery.orderByDescending("createdAt");
         avQuery.include("owner");

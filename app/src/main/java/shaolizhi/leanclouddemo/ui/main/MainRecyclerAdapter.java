@@ -41,11 +41,11 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 
     @Override
     public void onBindViewHolder(MainViewHolder holder, int position) {
-        holder.mTitle.setText((CharSequence) listData.get(position).get("title"));
-        holder.mPrice.setText(listData.get(position).get("price") == null ? "￥" : "￥ " + listData.get(position).get("price"));
-        holder.mName.setText(listData.get(position).getAVUser("owner") == null ? "" : listData.get(position).getAVUser("owner").getUsername());
-        Glide.with(activity).load(listData.get(position).getAVFile("image") == null ? "www" : listData.get(position).getAVFile("image").getUrl()).into(holder.mPicture);
-        holder.mItem.setOnClickListener(new View.OnClickListener() {
+        holder.titleTextView.setText((CharSequence) listData.get(position).get("title"));
+        holder.priceTextView.setText(listData.get(position).get("price") == null ? "￥" : "￥ " + listData.get(position).get("price"));
+        holder.nameTextView.setText(listData.get(position).getAVUser("owner") == null ? "" : listData.get(position).getAVUser("owner").getUsername());
+        Glide.with(activity).load(listData.get(position).getAVFile("image") == null ? "www" : listData.get(position).getAVFile("image").getUrl()).into(holder.imageView);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity, "FUCK", Toast.LENGTH_SHORT).show();
@@ -59,19 +59,19 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
     }
 
     class MainViewHolder extends RecyclerView.ViewHolder {
-        private TextView mName;
-        private TextView mPrice;
-        private TextView mTitle;
-        private CardView mItem;
-        private ImageView mPicture;
+        private TextView nameTextView;
+        private TextView priceTextView;
+        private TextView titleTextView;
+        private CardView cardView;
+        private ImageView imageView;
 
         MainViewHolder(View itemView) {
             super(itemView);
-            mName = itemView.findViewById(R.id.name_item_main);
-            mTitle = itemView.findViewById(R.id.title_item_main);
-            mPrice = itemView.findViewById(R.id.price_item_main);
-            mPicture = itemView.findViewById(R.id.picture_item_main);
-            mItem = itemView.findViewById(R.id.item_main);
+            nameTextView = itemView.findViewById(R.id.main_act_recycler_textview1);
+            titleTextView = itemView.findViewById(R.id.main_act_recycler_textview2);
+            priceTextView = itemView.findViewById(R.id.main_act_recycler_textview3);
+            imageView = itemView.findViewById(R.id.main_act_recycler_imageview1);
+            cardView = itemView.findViewById(R.id.main_act_recycler_cardview);
         }
     }
 }

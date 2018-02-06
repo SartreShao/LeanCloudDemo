@@ -18,6 +18,7 @@
 
     <!--MainActivity-->
     <string name="main_act_string1">注销</string>
+    <string name="main_act_string2">展示图片</string>
 
     <!--PublishActivity-->
     <string name="publish_act_string1">标题</string>
